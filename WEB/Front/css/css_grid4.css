@@ -18,9 +18,10 @@ body {
 
 .container2{
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr;
-    gap: 10px;
+    grid-template:             
+                "a a"            
+                "b c";
+    background-color: rgb(0,167,135);
 }
 
 .item {
@@ -41,14 +42,24 @@ body {
     background-color: rgb(0,167,135);
 }
 
+.itemc{
+    background-color: rgb(0,167,135);
+}
+
 .item4{
+    grid-area: a;
+    margin: 10px;
     background-color: rgb(52,218,185);
 }
 
 .item5{
+    grid-area: b;
+    margin: 10px;
     background-color: rgb(29,193,160);
 }
 
 .item6{
+    grid-area: c;
+    margin: 10px;
     background-color: rgb(253,160,96);
 }
