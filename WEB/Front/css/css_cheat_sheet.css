@@ -1,0 +1,101 @@
+/*Selectores */
+h1 {
+    /*Atributo: estilo*/
+    color: #de3a19;
+}
+
+h2 {
+    color: rgb(176, 58, 46);
+}
+
+body {
+    margin: 0;
+}
+
+#ejemplo_border {
+    width: fit-content;
+    padding: 10px;
+    border: thick ridge rgb(250, 184, 252);
+}
+
+#ejemplo_border_lrbt {
+    width: fit-content;
+    padding: 10px;
+    border-left:thick ridge yellow;
+    border-right:thick ridge orange;
+    border-bottom:thick ridge green;
+    border-top: thick ridge blue;
+}
+
+#ejemplo_br {
+    width: fit-content;
+    padding: 10px;
+    border: rgb(195, 155, 211) solid;
+    border-radius: 35% 10%;
+
+}
+
+#ejemplo_background {
+    background-image: url("../images/background.jpg");
+}
+
+#ejemplo_color {
+    color: rgb(52, 152, 219);
+}
+
+#ejemplo_font {
+    font: bold 14px "Times New Roman";
+}
+
+#ejemplo_font_family {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+#ejemplo_font_sw {
+    font-style: oblique 45deg;
+    font-weight: 900;
+}
+
+#ejemplo_lista {
+    list-style: url(../images/list.png);
+}
+
+#ejemplo_wh {
+    padding: 10px;
+    height: 80px;
+    width: 200px;
+    background-color: rgb(223, 255, 219);
+}
+
+#ejemplo_margin {
+    margin: 10px 80px 10px 80px;
+    padding: 10px;
+    background-color: rgb(239, 216, 248  );
+}
+
+#ejemplo_pad {
+    width: fit-content;
+    padding: 10px 30px 20px 30px;
+    background-color: rgb(250, 242, 200);
+}
+
+#ejemplo_overflow {
+    padding: 10px;
+    height: 50px;
+    width: 200px;
+    background-color: rgb(250, 200, 228);
+    overflow: scroll;
+}
+
+#ejemplo_display {
+    display: inline-block;
+}
+
+#ejemplo_position {
+    position: relative;
+}
+
+#ejemplo_filter {
+    filter: blur(10px)
+}
+

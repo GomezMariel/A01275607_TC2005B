@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Docuemnt</title>
+    <link rel="stylesheet" href="../css/css_cheat_sheet.css">
+</head>
+<body>
+    <div>
+        <h1> Actividad: CSS Cheat Sheet</h1>
+    </div>
+
+    <div>
+        <h2>1. Border</h2>
+        <p>
+            Como su nombre lo indica, coloca un borde a un elemento. Tiene varias propiedades como el color, y estilo
+        </p>
+        <p id="ejemplo_border">
+            Este texto cuenta dentro <br>de un borde de color<br> rosa, de estilo ridge.
+        </p>
+    </div>
+
+    <div>
+        <h2>2. Border-left, border-right, border-bottom, border-top </h2>
+        <p>
+            Como el elemento descrito anteriormente, crea borde en un elemento; sin embargo, solo se modifica la parte 
+            referente a la palabra.
+        </p>
+        <p id="ejemplo_border_lrbt">
+            Este texto tiene un borde <br> superior azul, inferior verde, <br> derecho naranja e izquierdo <br>
+            amarillo.
+        </p>
+    </div>
+
+    <div>
+        <h2>3. Border radius</h2>
+        <p>
+            Border radius hace que las esquinas de nuestros bordes sean redondas. Al cambiar los valores, se pueden cambiar las formas 
+            del border.
+        </p>
+        <p id="ejemplo_br">
+            Los bordes de este <br> ejemplo están redondeados <br> con 35% y 10%.
+        </p>
+    </div>
+
+    <div>
+        <h2>4. Background-image</h2>
+        <p>
+            Como su nombre lo dice, es poder ponerle una imagen de fondo a un elemento. La primera capa que se declara, es la más cercana
+            al usuario. 
+        </p>
+
+    <p id="ejemplo_background">
+        Para este ejemplo usé una foto para poder poner <br>  el background imagen. Sin embargo, también se <br>  podría usar un gradiente para ponerlo
+        de fondo de este elemento
+    </p>
+    </div>
+
+    <div>
+        <h2>5. Color</h2>
+        <p>Cambia de color el texto. Se pueden usar palabras predefinidas para seleccionar el color, o también por medio de 
+            rgb, hsl, hwb, lab, entre otros. 
+        </p>
+        <p id="ejemplo_color">Para ejemplificar, cambiamos de color el texto de este párrafo utilizando id para seleccionarlo y 
+            rgb para elegir el color.
+        </p>
+    </div>
+
+    <div>
+        <h2>6. Font</h2>
+        <p>
+            Establece las propiedades de la fuente que queremos utilizar, y también establece la fuente de un elemento.
+
+        </p>
+        <p id="ejemplo_font">
+            Para este ejemplo cambiamos la font de este párrafo usando tamaño 14, tipografía Times New Roman y haciéndola bold. 
+        </p>
+    </div>
+
+    <div>
+        <h2>7. Font-family </h2>
+        <p>
+            Font-family nos da una lista de fuentes que podemos utilizar. La lista está separa por comas y está en orden de prioridad.
+            Ponemos varias fuentes, porque no sabemos si la que seleccionamos se podrá usar siempre.
+        </p>
+        <p id="ejemplo_font_family">
+            Usando font family, cambiamos este texto a la familia de Trebuchet MS.
+        </p>
+    </div>
+
+    <div>
+        <h2>8. Font-style, font weight</h2>
+        <p>
+            Font style nos indica que estilo tendrá las fuentes, si es normal, oblique o italic. Font weight indica que tan bold
+            va a estar un elemento. Puede depender de la font family que se esté usando. 
+        <p id="ejemplo_font_sw">
+            Para ejemplificar font style y wieght, este texto es oblique 45deg y weight 900.
+        </p>
+    </div>
+
+    <div>
+        <h2>9. Width, height</h2>
+        <p>
+            Usadas para modificar el alto y ancho de un elemento. Esto no incluye bordes o padding. 
+        </p>
+        <p id="ejemplo_wh">
+            Para ejemplificar, este elemento tiene height de, width de y un color de relleno.
+        </p>
+    </div>
+
+    <div>
+        <h2>10. List-style</h2>
+        <p>
+            Podemos editar las propiedades como image, position o type de la lista. 
+        </p>
+        <ul id="ejemplo_lista">
+            <li>Primer elemento</li>
+            <li>Segundo elemento</li>
+            <li>Tercer elemento</li>
+        </ul>
+    </div>
+
+    <div>
+        <h2>11. Margin</h2>
+        <p>
+            Es la propiedad que puede modificar el margen, tomando en cuenta los cuatro lados del elemento.
+            Se puede usar margin left, right, top y bottom. 
+        </p>
+        <p id="ejemplo_margin">
+            Este ejemplo tiene un margen de 10px 80px 10px 80px.
+        </p>
+    </div>
+
+    <div>
+        <h2>12. Padding</h2>
+        <p>
+            Pone un colchón o relleno a los cuatro lados del elemento. Nos permite editar sus propiedades. 
+            Al igual que en otros elementos, se puede editar cada lado usando let, right, bottom y top. 
+        </p>
+        <p id="ejemplo_pad">
+            Este elemento tiene un padding de 10px 30px 20px 30px.
+        </p>
+    </div>
+
+    <div>
+        <h2>13. Overflow</h2>
+        <p>
+            Si el contenido de un elemento es muy grande para su contenedor, se puede establecer el comportamiento 
+            que tendrá el contenido. 
+        </p>
+        <p id="ejemplo_overflow">
+            Para ver el overflow, definimos un width, y height para este contenido, y al ser muy pequeño no cabe todo el texto
+            aquí, por lo que podemos ver como funciona el overflow scroll.
+        </p>
+    </div>
+
+    <div>
+        <h2>14. Display</h2>
+        <p>
+            Display establece la manera en la que se ven los elementos. Esto también tiene la capacidad de afectar a sus hijos. 
+        </p>
+        <div id="ejemplo_display">
+            Este elemento está con un display de inline-block.
+        </div>
+    </div>
+
+    <div>
+        <h2>15.Position</h2>
+        <p>
+            Nos da la oportunidad de cambiar la forma en la que un elemento se posiciona en la página.
+        </p>
+        <p id="ejemplo_position">
+            Para este ejemplo no quería que elemento modificar tanto la página, por lo que un position sticky no era una 
+            opción. Por lo tanto, usé un position relative para que ahí se quedara. 
+        </p>
+    </div>
+
+    <div>
+        <h2>16. Filter</h2>
+        <p>
+            Filter se aplica principalmente en elementos gráficos como imágenes, backgrounds o bordes. Contiene varias 
+            funciones que generen un efecto sobre la imagen. En el ejemplo, la imagen tiene un efecto blur de 10px.
+        </p>
+        <img id="ejemplo_filter" src="../images/paisaje.jpg" alt="Fondo de paissaje"/>
+    </div>
+    
+</body>
+</html>
