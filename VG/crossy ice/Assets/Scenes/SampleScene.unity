@@ -2079,7 +2079,7 @@ MonoBehaviour:
   offset: 0.5
   upperLimitX: 16
   bottomLimitX: -13
-  upperLimitY: 21
+  upperLimitY: 36
   bottomLimitY: -10
 --- !u!1 &941088976
 GameObject:
@@ -3250,7 +3250,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   upperLimitX: 14
   bottomLimitX: -12
-  upperLimitY: 19
+  upperLimitY: 34
   bottomLimitY: -9
 --- !u!61 &1469582716
 BoxCollider2D:
@@ -18266,3 +18266,34 @@ Tilemap:
     e31: 0
     e32: 0
     e33: 1
+--- !u!1 &2108333153
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2108333154}
+  m_Layer: 0
+  m_Name: fijador
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &2108333154
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2108333153}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -0.07, y: 35.9, z: -0.3113155}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 4
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}

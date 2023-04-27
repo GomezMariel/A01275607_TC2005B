@@ -72,6 +72,18 @@ console.log(invierte1([1,2,5,3,9,8]))
 
 //3.2. Invierta un arreglo de números y regrese un nuevo arreglo con el resultado
 
+function invierte2 (n) {
+
+    let l = n.length
+
+    while (n.length) {
+        n.push(n.pop()) // .pop() toma el último elemento de la lista 
+    }
+    
+    return n2
+
+}
+
 //4. Escribe una función que reciba una cadena de texto y regrese una nueva con la primer letra de cada palabra en mayúscula.
 function  mayusculas (n){
     
