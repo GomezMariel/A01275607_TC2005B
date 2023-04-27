@@ -32,12 +32,22 @@ public class CameraMovement : MonoBehaviour
 
         float cameraLeft = player.position.x + offset - cam.orthographicSize * cam.aspect;
         float cameraRight = player.position.x + offset + cam.orthographicSize * cam.aspect;
+
         float cameraUp = player.position.y + offset + cam.orthographicSize;
         float cameraDown = player.position.y + offset - cam.orthographicSize;
 
+        float newCamPositionX = cam.transform.position.x;
+        float newCamPositionY = cam.transform.position.y;
+
         // if the cam wouldn't go out of bounds then move it
-        if (!(cameraLeft < bottomLimitX || cameraRight > upperLimitX || cameraUp > upperLimitY || cameraDown < bottomLimitY)) {
-            transform.position = new Vector3(player.position.x + offset, player.position.y + offset, -10);
+        if (!(cameraLeft < bottomLimitX || cameraRight > upperLimitX)) {
+            newCamPositionX = player.position.x + offset;
         }
+
+        if (!(cameraUp > upperLimitY || cameraDown < bottomLimitY)) {
+            newCamPositionY = player.position.y + offset;
+        }
+
+        transform.position = new Vector3(newCamPositionX, newCamPositionY, -10);
     }
 }
