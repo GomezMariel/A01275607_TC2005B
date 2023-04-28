@@ -1,4 +1,3 @@
-console.log("Hello World")
 
 //1. Escribe una función que encuentre el primer carácter de un cadena de texto que no se repite
 function norep (n){
@@ -56,7 +55,7 @@ console.log("Función 2")
 console.log(burbujoso([1,2,5,3,9,8]))
 
 //3.1. Invierta un arreglo de números y regrese un nuevo arreglo con el resultado
-function invierte1 (n) {
+function invierte (n) {
     let n2 = []
 
     while (n.length) {
@@ -67,22 +66,23 @@ function invierte1 (n) {
 
 }
 
-console.log("Función 3.1")
-console.log(invierte1([1,2,5,3,9,8]))
+let invertido = invierte([1,2,5,3,9,8])
 
-//3.2. Invierta un arreglo de números y regrese un nuevo arreglo con el resultado
+//3.2 la segunda que modifique el mismo arreglo que se pasa como argumento.
 
-function invierte2 (n) {
+function modif (n) {
 
-    let l = n.length
-
-    while (n.length) {
-        n.push(n.pop()) // .pop() toma el último elemento de la lista 
+    for (let i = 0; i < n.length; i++){
+        n[i] = n[i] + 1
     }
-    
-    return n2
 
+    return n
 }
+
+console.log("Función 3")
+console.log(modif(invertido))
+
+
 
 //4. Escribe una función que reciba una cadena de texto y regrese una nueva con la primer letra de cada palabra en mayúscula.
 function  mayusculas (n){
@@ -210,7 +210,9 @@ function median_moda(n) {
     let l = n.length
 
     n.sort((a, b) => a - b) // Acomoda los números de menos a mayor acomodando 1, 7, 10 y no 1, 10, 7
-
+    //sort() es una compare function. Si compare retorna 0, se queda igual, si retorna algo menor a 0 "a" es menor que b. 
+    //Si el return es mayor a 0, b es menor que a 
+    
     if (l % 2 === 0){ //Si la lonfitud es par, hay que obtener el promedio de dos números de en medio 
         mediana = (n[l / 2 - 1] + n[l / 2]) / 2
     }
@@ -300,12 +302,13 @@ function potencia(n){
 
 console.log("Función 14")
 console.log(potencia(16));
+console.log(potencia(10));
 
 //15. Escribe una función que tome una lista de números y devuelva una nueva lista con todos los números en orden descendente.
 
 function desce(n) {
 
-    n2 = n.sort((a, b) => b - a)
+    n2 = n.sort((a, b) => b - a) // esta notación es un shortcut para la de llaves con un return
     
     return n2
 }
