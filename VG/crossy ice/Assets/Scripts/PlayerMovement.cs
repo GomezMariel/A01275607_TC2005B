@@ -13,6 +13,8 @@ public class PlayerMovement : MonoBehaviour
     public int upperLimitY;
     public int bottomLimitY;
 
+    public LayerMask blockingLayer;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -22,20 +24,31 @@ public class PlayerMovement : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        Vector3 movement = new Vector3(0,0,0);
+
         if (Input.GetKeyDown(KeyCode.RightArrow) && transform.position.x < upperLimitX) {
-            transform.Translate(new Vector3(1, 0, 0));
+            movement = new Vector3(1, 0, 0);
         } 
 
         else if (Input.GetKeyDown(KeyCode.LeftArrow) && transform.position.x > bottomLimitX) {
-            transform.Translate(new Vector3(-1, 0, 0));
+            movement = new Vector3(-1, 0, 0);
         } 
         
         else if (Input.GetKeyDown(KeyCode.UpArrow) && transform.position.y < upperLimitY) {
-            transform.Translate(new Vector3(0, 1, 0));
+            movement = new Vector3(0, 1, 0);
         } 
         
         else if (Input.GetKeyDown(KeyCode.DownArrow) && transform.position.y > bottomLimitY) {
-            transform.Translate(new Vector3(0, -1, 0));
+            movement = new Vector3(0, -1, 0);
         }
+
+        if (canMove(movement)) {
+            transform.Translate(movement);
+        }
+    }
+
+    private bool canMove(Vector3 movement) {
+        RaycastHit2D hit = Physics2D.Raycast(transform.position + new Vector3(0.5f, 0.5f, 0f), movement, 1f, blockingLayer);
+        return hit.collider == null;
     }
 }
