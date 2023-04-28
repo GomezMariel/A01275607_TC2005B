@@ -23,7 +23,7 @@ public class PlayerController : MonoBehaviour
     void Update()
     {
         score = Mathf.Max(score, transform.position.y - startY);
-        print(score);
+        // print(score);
     }
 
     void OnCollisionEnter2D(Collision2D col)
