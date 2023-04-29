@@ -8,22 +8,26 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using TMPro;
 
 public class PlayerController : MonoBehaviour
 {
+    [SerializeField] TMP_Text scoreText;
+
     float startY;
     float score = 0;
     // Start is called before the first frame update
     void Start()
     {
         startY = transform.position.y;
+        scoreText.text = "Score 0";
     }
 
     // Update is called once per frame
     void Update()
     {
         score = Mathf.Max(score, transform.position.y - startY);
-        // print(score);
+        scoreText.text = "Score " + score;
     }
 
 
