@@ -5,6 +5,7 @@ using UnityEngine;
 public class GameMan : MonoBehaviour
 {
     [SerializeField] private GameObject gameOverText;
+    [SerializeField] private GameObject gameWinText;
     
     public static GameMan Instance {get; private set; }
     private void Awake(){
@@ -24,6 +25,10 @@ public class GameMan : MonoBehaviour
 
     public void ShowGameOverScreen(){
         gameOverText.SetActive(true);
+    }
+
+    public void ShowGameWinScreen() {
+        gameWinText.SetActive(true);
     }
 
 }
