@@ -26,20 +26,11 @@ public class PlayerController : MonoBehaviour
         // print(score);
     }
 
-    // void OnCollisionEnter2D(Collision2D col)
-    // {
-    //     if (col.gameObject.tag.Equals("snowball")) {
-    //         // GameMan.Instance.ShowGameOverText();
-    //         // Time.timeScale = 0f;
-    //         print("You lost");
-    //     }
-    // }
 
     private void OnCollisionEnter2D(Collision2D collision) {
         
         if (collision.gameObject.CompareTag("snowball")){
             GameMan.Instance.ShowGameOverScreen();
-            print("Perdiste con bola");
             Time.timeScale = 0f;
         }
     }
